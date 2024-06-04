@@ -1,0 +1,65 @@
+.sqaure {
+    background-color: cadetblue;
+    width: 100px;
+    height: 100px;
+    /* transition-duration: 3s;
+    transition-property: all; */
+}
+
+.sqaure:hover {
+    background-color: burlywood;
+
+    transform: rotate(45deg);
+    /* double the object to x and y direction using scale */
+    transform: scalex(2);
+    /* moving the object to x and y direction using translate */
+    transform: translatey(20px);
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border-radius: 50%;
+
+    animation-name: circle;
+    animation-duration: 2s;
+    /* animation-iteration-count: infinite; */
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@keyframes circle {
+    0% {
+        background-color: blueviolet;
+        opacity: 0%;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: blueviolet;
+        opacity: 25%;
+        left: 10px;
+        top: 10px;
+    }
+    50% {
+        background-color: blueviolet;
+        opacity: 50%;
+        left: 20px;
+        top: 20px;
+    }
+    75% {
+        background-color: blue;
+        opacity: 75%;
+        left: 30px;
+        top: 30px;
+    }
+    100% {
+        background-color: blue;
+        opacity: 100%;
+        left: 40px;
+        top: 40px;
+    }
+}

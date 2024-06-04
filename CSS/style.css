@@ -1,0 +1,61 @@
+.bluebox {
+    background-color: steelblue;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    /* its for  */
+    position: relative;
+}
+
+.yellowbox {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    /* absolute is used for share his space to other */
+    position: absolute;
+    /* its fixed on that position its scrollable */
+    /* position: fixed; */
+    /* sticy means set for nav bar at top if scrolling nav bar static on the given size */
+    /* position: sticky; */
+    top: 100px;
+    left: 100px;
+}
+
+.col p {
+    width: 30%;
+    float: right;
+    text-align: justify;
+    padding: 10px;
+}
+
+.col p:nth-child(4) {
+    clear: right;
+}
+/* 
+.para1 {
+    background-color: aqua;
+}
+
+.para2 {
+    background-color: gold;
+}
+
+.para3 {
+    background-color: green;
+} */
+
+@media screen and (min-width: 801px) {
+    .container p {
+        width: 30%;
+        float: left;
+        margin: 10px;
+    }
+}
+ 
+
+/* for print preview will see this customize  */
+@media print {
+    body {
+        background-color: none;
+    }
+}
